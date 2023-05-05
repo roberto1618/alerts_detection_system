@@ -1,6 +1,6 @@
 # Alert Detection System
 
-Welcome to the Alerts Detection System (EAM Edition)! :alarm_clock: :chart_with_upwards_trend:
+Welcome to the Alerts Detection System! :alarm_clock: :chart_with_upwards_trend:
 
 If you are tired of checking every day if your metrics have broken
 or if they resulted in a value that does not correspond with your expectations, then you can use our
@@ -12,7 +12,7 @@ We will explain it to you in a very brief way.
 the predictions for the rest of the current month! If you want, you will receive an Excel archive with the future
 predictions for every metric you introduce in the System.
 
-## How to use the Alert Detection System (EAM Edition)
+## How to use the Alert Detection System
 
 ### Initial Setup
 
