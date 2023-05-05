@@ -1,0 +1,18 @@
+{
+    "googleProject":{
+        "project":      "your-google-project-name",
+        "tokenFile":  "token_name_download_data"
+    },
+    "model":{
+        "nHistData": 120
+    },
+    "tableAlerts":{
+        "showUmbral": "False",
+        "saveHistorical": "False",
+        "limSupAlert": "False"
+    },
+    "mail":{
+        "typeSend":    "email",
+        "alertsTableTitle": "Alerts Table"
+    }
+}

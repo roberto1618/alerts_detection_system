@@ -1,0 +1,23 @@
+0:
+  source: 'BQ'
+  kpiNamesMethod:
+    kpi_name1: {'method': 'prophet', 'isRelated': 'False', 'confInt': 99.9, 'seasonMode': 'multiplicative', 'sendAlert': 'True', 'changePrior': 0.5}
+    kpi_name2: {'method': 'prophet', 'isRelated': 'False', 'confInt': 99.9, 'seasonMode': 'multiplicative', 'sendAlert': 'True', 'changePrior': 0.5}
+    kpi_name3: {'method': 'prophet', 'isRelated': 'True', 'confInt': 99.9, 'seasonMode': 'multiplicative', 'sendAlert': 'True', 'changePrior': 0.5}
+  sqlQuery: "select {dateName}, kpi1 as {0}, kpi2 as {1} from table where {dateName} between '{start_date}' and '{end_date}' and ..."
+  dateName: 'your_date_column_name'
+  dateFormat: '%Y%m%d'
+
+1:
+  source: 'GA'
+  viewName: 'Give_a_name_to_your_GA_view'
+  viewID: 'set_your_view_id'
+  kpiNamesMethod:
+    kpi_name: {'method': 'prophet', 'isRelated': 'False', 'confInt': 99.9, 'seasonMode': 'multiplicative', 'sendAlert': 'True', 'changePrior': 0.5}
+  metric: 'set_your_metric_name'
+  segment: 'set_a_segment'
+  filters: [{'filters': {
+    'dimensionName': 'ga:your_dimension_name',
+    'expressions': ['your_expression'],
+    'operator': 'REGEXP'
+  }}]
